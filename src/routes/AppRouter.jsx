@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import AdminContactos from "../admin/AdminContactos";
 
 export default function AppRouter() {
   return (
@@ -15,6 +16,7 @@ export default function AppRouter() {
       <Route path="/proyectos" element={<Projects />} />
       <Route path="/contacto" element={<Contact />} />
       <Route path="*" element={<Home />} />
+      <Route path="/admin/contactos" element={<AdminContactos />} />
     </Routes>
   );
 }
